@@ -23,3 +23,52 @@ Melalui Machine Learning, proyek ini mencoba **mengelompokkan data penjualan** m
 ```bash
 git clone https://github.com/yourusername/sales-segmentation-ml.git
 cd sales-segmentation-ml
+## ⚙️ Instalasi & Dependensi
+```
+
+2. **Aktifkan virtual environment:**
+
+```bash
+python -m venv venv
+source venv/bin/activate  # atau venv\\Scripts\\activate di Windows
+```
+
+3. **Aktifkan virtual environment:**
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🔁 Alur Proyek
+
+Berikut adalah flow utama dari proyek:
+- Import & Load Data
+Data penjualan dimuat dari file CSV.
+- Eksplorasi Data
+  - Visualisasi distribusi dan korelasi antar fitur
+  - Cek nilai outlier dan missing values
+- Pra-Pemrosesan
+  - One-Hot Encoding pada fitur kategorikal
+  - Normalisasi fitur numerik
+  - Menambahkan fitur baru seperti Revenue_per_Unit
+  - Reduksi dimensi dengan PCA
+  - Sampling data jika terlalu besar
+- Clustering (K-Means)
+  - Menentukan jumlah cluster optimal
+  - Menyimpan label cluster ke dalam dataset sebagai target awal
+- Data Splitting
+Dataset dibagi menjadi 80% training dan 20% testing untuk klasifikasi.
+- Klasifikasi
+  - Melatih model KNN dan Naive Bayes
+  - Evaluasi dengan akurasi, F1-score, precision, recall, dan confusion matrix
+- Tuning Hyperparameter
+  - Gunakan RandomizedSearchCV untuk mencari parameter optimal pada KNN
+  - Ulangi proses evaluasi untuk model yang sudah dituning
+- Analisis & Interpretasi
+  - Bandingkan performa model sebelum dan sesudah tuning
+  - Interpretasi karakteristik cluster
+  - Rekomendasi strategi bisnis berdasarkan segmentasi
+  
+---
