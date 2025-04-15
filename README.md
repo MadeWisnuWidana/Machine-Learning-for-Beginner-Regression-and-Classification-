@@ -72,3 +72,35 @@ Dataset dibagi menjadi 80% training dan 20% testing untuk klasifikasi.
   - Rekomendasi strategi bisnis berdasarkan segmentasi
   
 ---
+
+## 🧪 Hasil Utama
+
+Clustering membagi pelanggan menjadi 2 kelompok berdasarkan kebiasaan belanja dan nilai transaksi. **KNN (setelah tuning) menunjukkan akurasi hingga 99.8%**, jauh lebih tinggi dari Naive Bayes.
+
+Karakteristik cluster dianalisis untuk strategi pemasaran:
+  - Cluster 0 → B2C retail massal
+  - Cluster 1 → Premium/high-value customers (B2B)
+
+---
+
+## 📝 Catatan Tambahan
+
+- File .ipynb tersedia untuk setiap tahap pengerjaan.
+- Dataset tidak disediakan di repo, pastikan untuk menggunakan struktur data sesuai format yang dijelaskan.
+- Model klasifikasi bisa diperluas ke model lain seperti Decision Tree atau XGBoost jika diperlukan.
+
+---
+
+## 🙌 Kontribusi
+
+Pull request sangat diterima. Jangan ragu untuk membuat issue jika ada pertanyaan atau perbaikan!
+
+---
+
+## 📧 Kontak
+
+Made Wisnu Widana
+Mahasiswa Teknik Komputer, Universitas Brawijaya
+📬 Email: [madewisnuwidana59@gmail.com]
+
+---
